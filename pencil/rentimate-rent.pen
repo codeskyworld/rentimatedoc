@@ -1,0 +1,2271 @@
+{
+  "version": "2.11",
+  "children": [
+    {
+      "type": "frame",
+      "id": "r01Root",
+      "x": 0,
+      "y": 0,
+      "name": "r-01-rent-home-zh",
+      "clip": true,
+      "width": 393,
+      "height": 852,
+      "fill": "#F2F2F7",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "statusBar",
+          "name": "Status Bar",
+          "clip": true,
+          "width": "fill_container",
+          "height": 47,
+          "fill": "#F2F2F7",
+          "padding": [
+            14,
+            24,
+            0,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "statusTime",
+              "name": "Time",
+              "fill": "#1C1C1E",
+              "content": "9:41",
+              "lineHeight": 1.35,
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "statusIcons",
+              "name": "Status Icons",
+              "clip": true,
+              "gap": 6,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "sig",
+                  "name": "signal",
+                  "fill": "#1C1C1E",
+                  "content": "●●●",
+                  "lineHeight": 1.35,
+                  "fontFamily": "Inter",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "wifi",
+                  "name": "wifi",
+                  "fill": "#1C1C1E",
+                  "content": "WiFi",
+                  "lineHeight": 1.35,
+                  "fontFamily": "Inter",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "bat",
+                  "name": "battery",
+                  "clip": true,
+                  "width": 24,
+                  "height": 12,
+                  "fill": "#F2F2F7",
+                  "cornerRadius": 3,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#1C1C1E"
+                  },
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "batF",
+                      "x": 2,
+                      "y": 2,
+                      "name": "fill",
+                      "clip": true,
+                      "width": 18,
+                      "height": 8,
+                      "fill": "#1C1C1E",
+                      "cornerRadius": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "navBar",
+          "name": "Navigation Bar",
+          "clip": true,
+          "width": "fill_container",
+          "height": 44,
+          "fill": "#F2F2F7",
+          "padding": [
+            0,
+            16
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "navTitle",
+              "name": "Title",
+              "fill": "#1C1C1E",
+              "content": "收租",
+              "lineHeight": 1.35,
+              "fontFamily": "Inter",
+              "fontSize": 28,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "navAct",
+              "name": "Actions",
+              "clip": true,
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "navChart",
+                  "name": "财务统计",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "chart-column",
+                  "iconFontFamily": "lucide",
+                  "fill": "#0F766E"
+                },
+                {
+                  "type": "frame",
+                  "id": "bellW",
+                  "name": "Bell",
+                  "clip": true,
+                  "width": 28,
+                  "height": 28,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "navBell",
+                      "x": 0,
+                      "y": 0,
+                      "name": "消息提醒",
+                      "width": 24,
+                      "height": 24,
+                      "iconFontName": "bell",
+                      "iconFontFamily": "lucide",
+                      "fill": "#1C1C1E"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "badge",
+                      "x": 14,
+                      "y": -2,
+                      "name": "Badge",
+                      "clip": true,
+                      "width": 18,
+                      "height": 18,
+                      "fill": "#FF3B30",
+                      "cornerRadius": 9,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "badgeN",
+                          "name": "count",
+                          "fill": "#FFFFFF",
+                          "content": "2",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "main",
+          "name": "Main Content",
+          "clip": true,
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 14,
+          "padding": [
+            8,
+            16,
+            16,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "urgent",
+              "name": "紧急待办",
+              "clip": true,
+              "width": "fill_container",
+              "fill": "#FFF7ED",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FDBA74"
+              },
+              "gap": 10,
+              "padding": [
+                12,
+                14
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "urgIc",
+                  "name": "alert",
+                  "width": 20,
+                  "height": 20,
+                  "iconFontName": "circle-alert",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FF9500"
+                },
+                {
+                  "type": "frame",
+                  "id": "urgTx",
+                  "name": "text",
+                  "clip": true,
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "urgLb",
+                      "name": "label",
+                      "fill": "#C2410C",
+                      "content": "紧急待办",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "urgMsg",
+                      "name": "msg",
+                      "fill": "#1C1C1E",
+                      "content": "明天 10:00 交房 · 阳光花园 2栋501 租约将到期",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "icon_font",
+                  "id": "urgCh",
+                  "name": "chev",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FF9500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "overview",
+              "name": "本月概览",
+              "clip": true,
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 16,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000000D",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 12
+              },
+              "layout": "vertical",
+              "gap": 14,
+              "padding": [
+                16,
+                18
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ovH",
+                  "name": "header",
+                  "clip": true,
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ovT",
+                      "name": "title",
+                      "fill": "#1C1C1E",
+                      "content": "本月概览",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 17,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ovS",
+                      "name": "month",
+                      "fill": "#8E8E93",
+                      "content": "五月",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ovSt",
+                  "name": "stats",
+                  "clip": true,
+                  "width": "fill_container",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "stP",
+                      "name": "待收",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "#CCFBF1",
+                      "cornerRadius": 12,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": [
+                        12,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "stPL",
+                          "name": "l",
+                          "fill": "#0F766E",
+                          "content": "待收",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "stPV",
+                          "name": "v",
+                          "fill": "#0F766E",
+                          "content": "¥5,000",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 22,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "stD",
+                      "name": "已收",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "#F0FDF4",
+                      "cornerRadius": 12,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": [
+                        12,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "stDL",
+                          "name": "l",
+                          "fill": "#15803D",
+                          "content": "已收",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "stDV",
+                          "name": "v",
+                          "fill": "#15803D",
+                          "content": "¥12,300",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 22,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ph",
+              "name": "Pending Header",
+              "clip": true,
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "phT",
+                  "name": "title",
+                  "fill": "#1C1C1E",
+                  "content": "待处理",
+                  "lineHeight": 1.35,
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "phC",
+                  "name": "count",
+                  "fill": "#0F766E",
+                  "content": "3",
+                  "lineHeight": 1.35,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "c1",
+              "name": "3月租金",
+              "clip": true,
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 14,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000000D",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 12
+              },
+              "gap": 12,
+              "padding": [
+                14,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "c1_iw",
+                  "name": "iconWrap",
+                  "clip": true,
+                  "width": 44,
+                  "height": 44,
+                  "fill": "#0F766E22",
+                  "cornerRadius": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "c1_ic",
+                      "name": "icon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "banknote",
+                      "iconFontFamily": "lucide",
+                      "fill": "#0F766E"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "c1_bd",
+                  "name": "body",
+                  "clip": true,
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "c1_r1",
+                      "name": "row1",
+                      "clip": true,
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "c1_t",
+                          "name": "title",
+                          "fill": "#1C1C1E",
+                          "content": "3月租金",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "c1_tg",
+                          "name": "tag",
+                          "fill": "#0F766E",
+                          "content": "待收",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "c1_s",
+                      "name": "subtitle",
+                      "fill": "#8E8E93",
+                      "content": "阳光花园 2栋501 · 张三",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "c1_a",
+                      "name": "amount",
+                      "fill": "#1C1C1E",
+                      "content": "¥3,200",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "icon_font",
+                  "id": "c1_ch",
+                  "name": "chevron",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#AEAEB2"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "c2",
+              "name": "押金退还",
+              "clip": true,
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 14,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000000D",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 12
+              },
+              "gap": 12,
+              "padding": [
+                14,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "c2_iw",
+                  "name": "iconWrap",
+                  "clip": true,
+                  "width": 44,
+                  "height": 44,
+                  "fill": "#FF950022",
+                  "cornerRadius": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "c2_ic",
+                      "name": "icon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "undo-2",
+                      "iconFontFamily": "lucide",
+                      "fill": "#FF9500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "c2_bd",
+                  "name": "body",
+                  "clip": true,
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "c2_r1",
+                      "name": "row1",
+                      "clip": true,
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "c2_t",
+                          "name": "title",
+                          "fill": "#1C1C1E",
+                          "content": "押金退还",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "c2_tg",
+                          "name": "tag",
+                          "fill": "#FF9500",
+                          "content": "待退",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "c2_s",
+                      "name": "subtitle",
+                      "fill": "#8E8E93",
+                      "content": "翠湖名苑 8-1202 · 李四",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "c2_a",
+                      "name": "amount",
+                      "fill": "#1C1C1E",
+                      "content": "¥2,000",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "icon_font",
+                  "id": "c2_ch",
+                  "name": "chevron",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#AEAEB2"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "c3",
+              "name": "空调费",
+              "clip": true,
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 14,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000000D",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 12
+              },
+              "gap": 12,
+              "padding": [
+                14,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "c3_iw",
+                  "name": "iconWrap",
+                  "clip": true,
+                  "width": 44,
+                  "height": 44,
+                  "fill": "#007AFF22",
+                  "cornerRadius": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "c3_ic",
+                      "name": "icon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "receipt",
+                      "iconFontFamily": "lucide",
+                      "fill": "#007AFF"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "c3_bd",
+                  "name": "body",
+                  "clip": true,
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "c3_r1",
+                      "name": "row1",
+                      "clip": true,
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "c3_t",
+                          "name": "title",
+                          "fill": "#1C1C1E",
+                          "content": "空调费",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "c3_tg",
+                          "name": "tag",
+                          "fill": "#007AFF",
+                          "content": "待收",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "c3_s",
+                      "name": "subtitle",
+                      "fill": "#8E8E93",
+                      "content": "滨江公寓 A座803 · 王五",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "c3_a",
+                      "name": "amount",
+                      "fill": "#1C1C1E",
+                      "content": "¥200",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "icon_font",
+                  "id": "c3_ch",
+                  "name": "chevron",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#AEAEB2"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "viewAll",
+              "name": "全部应收",
+              "clip": true,
+              "width": "fill_container",
+              "gap": 4,
+              "padding": [
+                8,
+                0
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vaT",
+                  "name": "text",
+                  "fill": "#0F766E",
+                  "content": "全部应收",
+                  "lineHeight": 1.35,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "vaC",
+                  "name": "chev",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#0F766E"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tabBar",
+          "name": "Tab Bar",
+          "clip": true,
+          "width": "fill_container",
+          "height": 83,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E5E5EA"
+          },
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "tabs",
+              "name": "Tabs",
+              "clip": true,
+              "width": "fill_container",
+              "height": 49,
+              "padding": [
+                0,
+                8
+              ],
+              "justifyContent": "space_around",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "tab0",
+                  "name": "收租",
+                  "clip": true,
+                  "width": 64,
+                  "layout": "vertical",
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "tab0i",
+                      "name": "icon",
+                      "width": 22,
+                      "height": 22,
+                      "iconFontName": "wallet",
+                      "iconFontFamily": "lucide",
+                      "fill": "#0F766E"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tab0l",
+                      "name": "label",
+                      "fill": "#0F766E",
+                      "content": "收租",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tab1",
+                  "name": "支出",
+                  "clip": true,
+                  "width": 64,
+                  "layout": "vertical",
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "tab1i",
+                      "name": "icon",
+                      "width": 22,
+                      "height": 22,
+                      "iconFontName": "credit-card",
+                      "iconFontFamily": "lucide",
+                      "fill": "#AEAEB2"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tab1l",
+                      "name": "label",
+                      "fill": "#AEAEB2",
+                      "content": "支出",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tab2",
+                  "name": "租客",
+                  "clip": true,
+                  "width": 64,
+                  "layout": "vertical",
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "tab2i",
+                      "name": "icon",
+                      "width": 22,
+                      "height": 22,
+                      "iconFontName": "users",
+                      "iconFontFamily": "lucide",
+                      "fill": "#AEAEB2"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tab2l",
+                      "name": "label",
+                      "fill": "#AEAEB2",
+                      "content": "租客",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tab3",
+                  "name": "房源",
+                  "clip": true,
+                  "width": 64,
+                  "layout": "vertical",
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "tab3i",
+                      "name": "icon",
+                      "width": 22,
+                      "height": 22,
+                      "iconFontName": "house",
+                      "iconFontFamily": "lucide",
+                      "fill": "#AEAEB2"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tab3l",
+                      "name": "label",
+                      "fill": "#AEAEB2",
+                      "content": "房源",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tab4",
+                  "name": "更多",
+                  "clip": true,
+                  "width": 64,
+                  "layout": "vertical",
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "tab4i",
+                      "name": "icon",
+                      "width": 22,
+                      "height": 22,
+                      "iconFontName": "ellipsis",
+                      "iconFontFamily": "lucide",
+                      "fill": "#AEAEB2"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tab4l",
+                      "name": "label",
+                      "fill": "#AEAEB2",
+                      "content": "更多",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "homeInd",
+              "name": "Home Indicator",
+              "clip": true,
+              "width": "fill_container",
+              "height": 34,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "hiP",
+                  "name": "pill",
+                  "clip": true,
+                  "width": 134,
+                  "height": 5,
+                  "fill": "#000000",
+                  "cornerRadius": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "r01RootEn",
+      "x": 433,
+      "y": 0,
+      "name": "r-01-rent-home-en",
+      "clip": true,
+      "width": 393,
+      "height": 852,
+      "fill": "#F2F2F7",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "statusBarEn",
+          "name": "Status Bar",
+          "clip": true,
+          "width": "fill_container",
+          "height": 47,
+          "fill": "#F2F2F7",
+          "padding": [
+            14,
+            24,
+            0,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "statusTimeEn",
+              "name": "Time",
+              "fill": "#1C1C1E",
+              "content": "9:41",
+              "lineHeight": 1.35,
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "statusIconsEn",
+              "name": "Status Icons",
+              "clip": true,
+              "gap": 6,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "sigEn",
+                  "name": "signal",
+                  "fill": "#1C1C1E",
+                  "content": "●●●",
+                  "lineHeight": 1.35,
+                  "fontFamily": "Inter",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "wifiEn",
+                  "name": "wifi",
+                  "fill": "#1C1C1E",
+                  "content": "WiFi",
+                  "lineHeight": 1.35,
+                  "fontFamily": "Inter",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "batEn",
+                  "name": "battery",
+                  "clip": true,
+                  "width": 24,
+                  "height": 12,
+                  "fill": "#F2F2F7",
+                  "cornerRadius": 3,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#1C1C1E"
+                  },
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "batFEn",
+                      "x": 2,
+                      "y": 2,
+                      "name": "fill",
+                      "clip": true,
+                      "width": 18,
+                      "height": 8,
+                      "fill": "#1C1C1E",
+                      "cornerRadius": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "navBarEn",
+          "name": "Navigation Bar",
+          "clip": true,
+          "width": "fill_container",
+          "height": 44,
+          "fill": "#F2F2F7",
+          "padding": [
+            0,
+            16
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "navTitleEn",
+              "name": "Title",
+              "fill": "#1C1C1E",
+              "content": "Rent",
+              "lineHeight": 1.35,
+              "fontFamily": "Inter",
+              "fontSize": 28,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "navActEn",
+              "name": "Actions",
+              "clip": true,
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "navChartEn",
+                  "name": "Finance",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "chart-column",
+                  "iconFontFamily": "lucide",
+                  "fill": "#0F766E"
+                },
+                {
+                  "type": "frame",
+                  "id": "bellWEn",
+                  "name": "Bell",
+                  "clip": true,
+                  "width": 28,
+                  "height": 28,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "navBellEn",
+                      "x": 0,
+                      "y": 0,
+                      "name": "Alerts",
+                      "width": 24,
+                      "height": 24,
+                      "iconFontName": "bell",
+                      "iconFontFamily": "lucide",
+                      "fill": "#1C1C1E"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "badgeEn",
+                      "x": 14,
+                      "y": -2,
+                      "name": "Badge",
+                      "clip": true,
+                      "width": 18,
+                      "height": 18,
+                      "fill": "#FF3B30",
+                      "cornerRadius": 9,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "badgeNEn",
+                          "name": "count",
+                          "fill": "#FFFFFF",
+                          "content": "2",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "mainEn",
+          "name": "Main Content",
+          "clip": true,
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 14,
+          "padding": [
+            8,
+            16,
+            16,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "urgentEn",
+              "name": "Urgent",
+              "clip": true,
+              "width": "fill_container",
+              "fill": "#FFF7ED",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FDBA74"
+              },
+              "gap": 10,
+              "padding": [
+                12,
+                14
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "urgIcEn",
+                  "name": "alert",
+                  "width": 20,
+                  "height": 20,
+                  "iconFontName": "circle-alert",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FF9500"
+                },
+                {
+                  "type": "frame",
+                  "id": "urgTxEn",
+                  "name": "text",
+                  "clip": true,
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "urgLbEn",
+                      "name": "label",
+                      "fill": "#C2410C",
+                      "content": "Urgent",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "urgMsgEn",
+                      "name": "msg",
+                      "fill": "#1C1C1E",
+                      "content": "Move-in tomorrow 10:00 · Sunshine Garden B2-501 lease expiring",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "icon_font",
+                  "id": "urgChEn",
+                  "name": "chev",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FF9500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "overviewEn",
+              "name": "This Month",
+              "clip": true,
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 16,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000000D",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 12
+              },
+              "layout": "vertical",
+              "gap": 14,
+              "padding": [
+                16,
+                18
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ovHEn",
+                  "name": "header",
+                  "clip": true,
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ovTEn",
+                      "name": "title",
+                      "fill": "#1C1C1E",
+                      "content": "This Month",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 17,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ovSEn",
+                      "name": "month",
+                      "fill": "#8E8E93",
+                      "content": "May",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ovStEn",
+                  "name": "stats",
+                  "clip": true,
+                  "width": "fill_container",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "stPEn",
+                      "name": "Due",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "#CCFBF1",
+                      "cornerRadius": 12,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": [
+                        12,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "stPLEn",
+                          "name": "l",
+                          "fill": "#0F766E",
+                          "content": "Due",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "stPVEn",
+                          "name": "v",
+                          "fill": "#0F766E",
+                          "content": "¥5,000",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 22,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "stDEn",
+                      "name": "Received",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "#F0FDF4",
+                      "cornerRadius": 12,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": [
+                        12,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "stDLEn",
+                          "name": "l",
+                          "fill": "#15803D",
+                          "content": "Received",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "stDVEn",
+                          "name": "v",
+                          "fill": "#15803D",
+                          "content": "¥12,300",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 22,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "phEn",
+              "name": "Pending Header",
+              "clip": true,
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "phTEn",
+                  "name": "title",
+                  "fill": "#1C1C1E",
+                  "content": "To Do",
+                  "lineHeight": 1.35,
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "phCEn",
+                  "name": "count",
+                  "fill": "#0F766E",
+                  "content": "3",
+                  "lineHeight": 1.35,
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "c1En",
+              "name": "March Rent",
+              "clip": true,
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 14,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000000D",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 12
+              },
+              "gap": 12,
+              "padding": [
+                14,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "c1En_iw",
+                  "name": "iconWrap",
+                  "clip": true,
+                  "width": 44,
+                  "height": 44,
+                  "fill": "#0F766E22",
+                  "cornerRadius": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "c1En_ic",
+                      "name": "icon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "banknote",
+                      "iconFontFamily": "lucide",
+                      "fill": "#0F766E"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "c1En_bd",
+                  "name": "body",
+                  "clip": true,
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "c1En_r1",
+                      "name": "row1",
+                      "clip": true,
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "c1En_t",
+                          "name": "title",
+                          "fill": "#1C1C1E",
+                          "content": "March Rent",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "c1En_tg",
+                          "name": "tag",
+                          "fill": "#0F766E",
+                          "content": "Due",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "c1En_s",
+                      "name": "subtitle",
+                      "fill": "#8E8E93",
+                      "content": "Sunshine Garden B2-501 · Zhang San",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "c1En_a",
+                      "name": "amount",
+                      "fill": "#1C1C1E",
+                      "content": "¥3,200",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "icon_font",
+                  "id": "c1En_ch",
+                  "name": "chevron",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#AEAEB2"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "c2En",
+              "name": "Deposit Refund",
+              "clip": true,
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 14,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000000D",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 12
+              },
+              "gap": 12,
+              "padding": [
+                14,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "c2En_iw",
+                  "name": "iconWrap",
+                  "clip": true,
+                  "width": 44,
+                  "height": 44,
+                  "fill": "#FF950022",
+                  "cornerRadius": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "c2En_ic",
+                      "name": "icon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "undo-2",
+                      "iconFontFamily": "lucide",
+                      "fill": "#FF9500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "c2En_bd",
+                  "name": "body",
+                  "clip": true,
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "c2En_r1",
+                      "name": "row1",
+                      "clip": true,
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "c2En_t",
+                          "name": "title",
+                          "fill": "#1C1C1E",
+                          "content": "Deposit Refund",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "c2En_tg",
+                          "name": "tag",
+                          "fill": "#FF9500",
+                          "content": "Refund",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "c2En_s",
+                      "name": "subtitle",
+                      "fill": "#8E8E93",
+                      "content": "Emerald Lake 8-1202 · Li Si",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "c2En_a",
+                      "name": "amount",
+                      "fill": "#1C1C1E",
+                      "content": "¥2,000",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "icon_font",
+                  "id": "c2En_ch",
+                  "name": "chevron",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#AEAEB2"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "c3En",
+              "name": "A/C Fee",
+              "clip": true,
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 14,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000000D",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 12
+              },
+              "gap": 12,
+              "padding": [
+                14,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "c3En_iw",
+                  "name": "iconWrap",
+                  "clip": true,
+                  "width": 44,
+                  "height": 44,
+                  "fill": "#007AFF22",
+                  "cornerRadius": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "c3En_ic",
+                      "name": "icon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "receipt",
+                      "iconFontFamily": "lucide",
+                      "fill": "#007AFF"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "c3En_bd",
+                  "name": "body",
+                  "clip": true,
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "c3En_r1",
+                      "name": "row1",
+                      "clip": true,
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "c3En_t",
+                          "name": "title",
+                          "fill": "#1C1C1E",
+                          "content": "A/C Fee",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "c3En_tg",
+                          "name": "tag",
+                          "fill": "#007AFF",
+                          "content": "Due",
+                          "lineHeight": 1.35,
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "c3En_s",
+                      "name": "subtitle",
+                      "fill": "#8E8E93",
+                      "content": "Riverside Apt A-803 · Wang Wu",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "c3En_a",
+                      "name": "amount",
+                      "fill": "#1C1C1E",
+                      "content": "¥200",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "icon_font",
+                  "id": "c3En_ch",
+                  "name": "chevron",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#AEAEB2"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "viewAllEn",
+              "name": "All Receivables",
+              "clip": true,
+              "width": "fill_container",
+              "gap": 4,
+              "padding": [
+                8,
+                0
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vaTEn",
+                  "name": "text",
+                  "fill": "#0F766E",
+                  "content": "All Receivables",
+                  "lineHeight": 1.35,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "vaCEn",
+                  "name": "chev",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#0F766E"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tabBarEn",
+          "name": "Tab Bar",
+          "clip": true,
+          "width": "fill_container",
+          "height": 83,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E5E5EA"
+          },
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "tabsEn",
+              "name": "Tabs",
+              "clip": true,
+              "width": "fill_container",
+              "height": 49,
+              "padding": [
+                0,
+                8
+              ],
+              "justifyContent": "space_around",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "tab0En",
+                  "name": "Rent",
+                  "clip": true,
+                  "width": 64,
+                  "layout": "vertical",
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "tab0iEn",
+                      "name": "icon",
+                      "width": 22,
+                      "height": 22,
+                      "iconFontName": "wallet",
+                      "iconFontFamily": "lucide",
+                      "fill": "#0F766E"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tab0lEn",
+                      "name": "label",
+                      "fill": "#0F766E",
+                      "content": "Rent",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tab1En",
+                  "name": "Expenses",
+                  "clip": true,
+                  "width": 64,
+                  "layout": "vertical",
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "tab1iEn",
+                      "name": "icon",
+                      "width": 22,
+                      "height": 22,
+                      "iconFontName": "credit-card",
+                      "iconFontFamily": "lucide",
+                      "fill": "#AEAEB2"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tab1lEn",
+                      "name": "label",
+                      "fill": "#AEAEB2",
+                      "content": "Expenses",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tab2En",
+                  "name": "Tenants",
+                  "clip": true,
+                  "width": 64,
+                  "layout": "vertical",
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "tab2iEn",
+                      "name": "icon",
+                      "width": 22,
+                      "height": 22,
+                      "iconFontName": "users",
+                      "iconFontFamily": "lucide",
+                      "fill": "#AEAEB2"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tab2lEn",
+                      "name": "label",
+                      "fill": "#AEAEB2",
+                      "content": "Tenants",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tab3En",
+                  "name": "Properties",
+                  "clip": true,
+                  "width": 64,
+                  "layout": "vertical",
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "tab3iEn",
+                      "name": "icon",
+                      "width": 22,
+                      "height": 22,
+                      "iconFontName": "house",
+                      "iconFontFamily": "lucide",
+                      "fill": "#AEAEB2"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tab3lEn",
+                      "name": "label",
+                      "fill": "#AEAEB2",
+                      "content": "Properties",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tab4En",
+                  "name": "More",
+                  "clip": true,
+                  "width": 64,
+                  "layout": "vertical",
+                  "gap": 3,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "tab4iEn",
+                      "name": "icon",
+                      "width": 22,
+                      "height": 22,
+                      "iconFontName": "ellipsis",
+                      "iconFontFamily": "lucide",
+                      "fill": "#AEAEB2"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tab4lEn",
+                      "name": "label",
+                      "fill": "#AEAEB2",
+                      "content": "More",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "homeIndEn",
+              "name": "Home Indicator",
+              "clip": true,
+              "width": "fill_container",
+              "height": 34,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "hiPEn",
+                  "name": "pill",
+                  "clip": true,
+                  "width": 134,
+                  "height": 5,
+                  "fill": "#000000",
+                  "cornerRadius": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "--bg": {
+      "type": "color",
+      "value": "#F2F2F7"
+    },
+    "--primary": {
+      "type": "color",
+      "value": "#0F766E"
+    },
+    "--primary-light": {
+      "type": "color",
+      "value": "#CCFBF1"
+    },
+    "--card": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "--success": {
+      "type": "color",
+      "value": "#15803D"
+    },
+    "--success-bg": {
+      "type": "color",
+      "value": "#F0FDF4"
+    },
+    "--text-primary": {
+      "type": "color",
+      "value": "#1C1C1E"
+    },
+    "--text-secondary": {
+      "type": "color",
+      "value": "#8E8E93"
+    }
+  }
+}
