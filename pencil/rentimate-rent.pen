@@ -3290,9 +3290,64 @@
                       "id": "WwRmf",
                       "name": "Label",
                       "fill": "#FFFFFF",
-                      "content": "确认收款",
+                      "content": "确认全额收款",
                       "fontFamily": "Inter",
                       "fontSize": 17,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Js6mk",
+                  "name": "Partial Button",
+                  "width": "fill_container",
+                  "height": 46,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1.5,
+                    "fill": "#0F766E"
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "cWzLY",
+                      "fill": "#0F766E",
+                      "content": "确认部分收款",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "n2f9HJ",
+                  "name": "Postpone Button",
+                  "width": "fill_container",
+                  "height": 46,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1.5,
+                    "fill": "#0F766E"
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "NrtmF",
+                      "name": "Label",
+                      "fill": "#0F766E",
+                      "content": "延期收租",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
                       "fontWeight": "600"
                     }
                   ]
@@ -4382,9 +4437,64 @@
                       "id": "yraE5",
                       "name": "Label",
                       "fill": "#FFFFFF",
-                      "content": "Confirm Payment",
+                      "content": "Confirm full payment",
                       "fontFamily": "Inter",
                       "fontSize": 17,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Of840",
+                  "name": "Partial Button",
+                  "width": "fill_container",
+                  "height": 46,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1.5,
+                    "fill": "#0F766E"
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "rjKSF",
+                      "fill": "#0F766E",
+                      "content": "Confirm partial payment",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Zpdut",
+                  "name": "Postpone Button",
+                  "width": "fill_container",
+                  "height": 46,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1.5,
+                    "fill": "#0F766E"
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "nSX1w",
+                      "name": "Label",
+                      "fill": "#0F766E",
+                      "content": "Postpone collection",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
                       "fontWeight": "600"
                     }
                   ]
@@ -9169,6 +9279,1792 @@
             {
               "type": "frame",
               "id": "g6hm2d",
+              "width": 134,
+              "height": 5,
+              "fill": "#1C1C1E",
+              "cornerRadius": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "tIkon",
+      "x": 2650,
+      "y": 0,
+      "name": "r-04-partial-payment-zh",
+      "clip": true,
+      "width": 393,
+      "height": 844,
+      "fill": "#F2F2F7",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "RMeku",
+          "name": "Status Bar",
+          "width": "fill_container",
+          "height": 47,
+          "fill": "#F2F2F7",
+          "padding": [
+            14,
+            24,
+            0,
+            24
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "thdHD",
+              "fill": "#1C1C1E",
+              "content": "9:41",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "DLz1g",
+          "name": "Navigation Bar",
+          "width": "fill_container",
+          "height": 44,
+          "fill": "#F2F2F7",
+          "gap": 8,
+          "padding": [
+            0,
+            12
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "wKEAN",
+              "name": "Back Button",
+              "width": 72,
+              "gap": 2,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "Endlq",
+                  "width": 22,
+                  "height": 22,
+                  "iconFontName": "chevron-left",
+                  "iconFontFamily": "lucide",
+                  "fill": "#0F766E"
+                },
+                {
+                  "type": "text",
+                  "id": "xZsdL",
+                  "fill": "#0F766E",
+                  "content": "返回",
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "sIuDu",
+              "fill": "#1C1C1E",
+              "content": "部分收款",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "Y6XeY",
+              "name": "Nav Spacer",
+              "width": 72,
+              "height": 1
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Emp2o",
+          "name": "Main Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "fill": "#F2F2F7",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            8,
+            16,
+            16,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "bmWto",
+              "name": "Summary Card",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 16,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000000D",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 12
+              },
+              "layout": "vertical",
+              "gap": 6,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "FdPq7",
+                  "fill": "#8E8E93",
+                  "content": "本期应收",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "dTjnP",
+                  "fill": "#1C1C1E",
+                  "content": "$1,600",
+                  "fontFamily": "Inter",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "nOWWB",
+                  "fill": "#6B7280",
+                  "content": "截至日期 2026/1/1 · 租金涵盖 1/1–1/28",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qHpXU",
+              "name": "Form Card",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 16,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000000A",
+                "offset": {
+                  "x": 0,
+                  "y": 2
+                },
+                "blur": 8
+              },
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "l4fgv",
+                  "name": "Field Amount",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "c1VK8",
+                      "fill": "#8E8E93",
+                      "content": "本次收取金额",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ReMm2",
+                      "name": "Input",
+                      "width": "fill_container",
+                      "fill": "#F9FAFB",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#E5E5EA"
+                      },
+                      "gap": 8,
+                      "padding": [
+                        12,
+                        14
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "u7e9R",
+                          "fill": "#1C1C1E",
+                          "content": "$",
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "MGxIR",
+                          "fill": "#1C1C1E",
+                          "content": "800",
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "w4D8BB",
+                      "fill": "#0F766E",
+                      "content": "剩余 $800 将自动生成新的收租任务",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "yGnvx",
+                  "name": "Field Reason",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "u472zL",
+                      "fill": "#8E8E93",
+                      "content": "部分支付原因",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "YB1bL",
+                      "name": "Input",
+                      "width": "fill_container",
+                      "height": 88,
+                      "fill": "#F9FAFB",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#E5E5EA"
+                      },
+                      "layout": "vertical",
+                      "padding": [
+                        12,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "t3NSeK",
+                          "fill": "#1C1C1E",
+                          "content": "租客本周仅凑齐一半，余款约定下周转",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "H0nAH",
+                  "name": "Field Next Date",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "L4vIi",
+                      "fill": "#8E8E93",
+                      "content": "下次收租日期",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "q2lnu",
+                      "name": "Input",
+                      "width": "fill_container",
+                      "fill": "#F9FAFB",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#E5E5EA"
+                      },
+                      "padding": [
+                        12,
+                        14
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ID2xF",
+                          "fill": "#1C1C1E",
+                          "content": "2026年1月8日",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "nxNAl",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "calendar",
+                          "iconFontFamily": "lucide",
+                          "fill": "#0F766E"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "QWRbs",
+                      "fill": "#8E8E93",
+                      "content": "到期前将提醒；届时生成待收任务",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gD0qf",
+              "name": "Hint",
+              "width": "fill_container",
+              "fill": "#FFFBEB",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FDE68A"
+              },
+              "gap": 8,
+              "padding": [
+                12,
+                14
+              ],
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "kEePU",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "info",
+                  "iconFontFamily": "lucide",
+                  "fill": "#D97706"
+                },
+                {
+                  "type": "text",
+                  "id": "D25ZqV",
+                  "fill": "#92400E",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "确认后：本期标记为部分完成，系统自动创建剩余金额的收租任务。",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "TLYOu",
+          "name": "Bottom Dock",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "top": 1
+            },
+            "fill": "#E5E5EA"
+          },
+          "layout": "vertical",
+          "padding": [
+            12,
+            16,
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "l7bm2",
+              "name": "Confirm Button",
+              "width": "fill_container",
+              "height": 46,
+              "fill": "#0F766E",
+              "cornerRadius": 12,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "d7SSQR",
+                  "fill": "#FFFFFF",
+                  "content": "确认部分收款",
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pLurC",
+          "name": "Home Indicator",
+          "width": "fill_container",
+          "height": 34,
+          "fill": "#FFFFFF",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "e9j4g",
+              "width": 134,
+              "height": 5,
+              "fill": "#1C1C1E",
+              "cornerRadius": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "aP54O",
+      "x": 3050,
+      "y": 0,
+      "name": "r-04-partial-payment-en",
+      "clip": true,
+      "width": 393,
+      "height": 844,
+      "fill": "#F2F2F7",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "tQuQ0",
+          "name": "Status Bar",
+          "width": "fill_container",
+          "height": 47,
+          "fill": "#F2F2F7",
+          "padding": [
+            14,
+            24,
+            0,
+            24
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "l2GGvZ",
+              "fill": "#1C1C1E",
+              "content": "9:41",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ACvEY",
+          "name": "Navigation Bar",
+          "width": "fill_container",
+          "height": 44,
+          "fill": "#F2F2F7",
+          "gap": 8,
+          "padding": [
+            0,
+            12
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "x9fe2",
+              "name": "Back Button",
+              "width": 72,
+              "gap": 2,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "SnMXj",
+                  "width": 22,
+                  "height": 22,
+                  "iconFontName": "chevron-left",
+                  "iconFontFamily": "lucide",
+                  "fill": "#0F766E"
+                },
+                {
+                  "type": "text",
+                  "id": "xq6MX",
+                  "fill": "#0F766E",
+                  "content": "Back",
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "L6Z2e",
+              "fill": "#1C1C1E",
+              "content": "Partial payment",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "a1W1A",
+              "name": "Nav Spacer",
+              "width": 72,
+              "height": 1
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pf7OJ",
+          "name": "Main Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "fill": "#F2F2F7",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            8,
+            16,
+            16,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "Ua4ki",
+              "name": "Summary Card",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 16,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000000D",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 12
+              },
+              "layout": "vertical",
+              "gap": 6,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "g9T8o4",
+                  "fill": "#8E8E93",
+                  "content": "Amount due",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "z9jvhb",
+                  "fill": "#1C1C1E",
+                  "content": "$1,600",
+                  "fontFamily": "Inter",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "x1VeA",
+                  "fill": "#6B7280",
+                  "content": "Due 1 Jan 2026 · Covers 1 Jan – 28 Jan",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "t5bACp",
+              "name": "Form Card",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 16,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000000A",
+                "offset": {
+                  "x": 0,
+                  "y": 2
+                },
+                "blur": 8
+              },
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "GGzxK",
+                  "name": "Field Amount",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "i9QTFx",
+                      "fill": "#8E8E93",
+                      "content": "Amount received",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "toouv",
+                      "name": "Input",
+                      "width": "fill_container",
+                      "fill": "#F9FAFB",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#E5E5EA"
+                      },
+                      "gap": 8,
+                      "padding": [
+                        12,
+                        14
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "HsCCB",
+                          "fill": "#1C1C1E",
+                          "content": "$",
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "lIsrf",
+                          "fill": "#1C1C1E",
+                          "content": "800",
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "n6tTU",
+                      "fill": "#0F766E",
+                      "content": "Remaining $800 auto-creates a new task",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "rorRY",
+                  "name": "Field Reason",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uB7mi",
+                      "fill": "#8E8E93",
+                      "content": "Reason for partial payment",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "X5qiss",
+                      "name": "Input",
+                      "width": "fill_container",
+                      "height": 88,
+                      "fill": "#F9FAFB",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#E5E5EA"
+                      },
+                      "layout": "vertical",
+                      "padding": [
+                        12,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "NMflu",
+                          "fill": "#1C1C1E",
+                          "content": "Tenant could only pay half this week; rest next week",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "m7EXHK",
+                  "name": "Field Next Date",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PygLn",
+                      "fill": "#8E8E93",
+                      "content": "Next collection date",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "apvOl",
+                      "name": "Input",
+                      "width": "fill_container",
+                      "fill": "#F9FAFB",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#E5E5EA"
+                      },
+                      "padding": [
+                        12,
+                        14
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Um9Zi",
+                          "fill": "#1C1C1E",
+                          "content": "8 Jan 2026",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "dr9oK",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "calendar",
+                          "iconFontFamily": "lucide",
+                          "fill": "#0F766E"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "BB5H3",
+                      "fill": "#8E8E93",
+                      "content": "Reminder before due; task created for balance",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "XzPId",
+              "name": "Hint",
+              "width": "fill_container",
+              "fill": "#FFFBEB",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FDE68A"
+              },
+              "gap": 8,
+              "padding": [
+                12,
+                14
+              ],
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "mZM88",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "info",
+                  "iconFontFamily": "lucide",
+                  "fill": "#D97706"
+                },
+                {
+                  "type": "text",
+                  "id": "o9D1pl",
+                  "fill": "#92400E",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "On confirm: this bill is marked partial; system creates a task for the remaining amount.",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "EIsL8",
+          "name": "Bottom Dock",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "top": 1
+            },
+            "fill": "#E5E5EA"
+          },
+          "layout": "vertical",
+          "padding": [
+            12,
+            16,
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "gaVMD",
+              "name": "Confirm Button",
+              "width": "fill_container",
+              "height": 46,
+              "fill": "#0F766E",
+              "cornerRadius": 12,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "VOtU3",
+                  "fill": "#FFFFFF",
+                  "content": "Confirm partial payment",
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "eKTgv",
+          "name": "Home Indicator",
+          "width": "fill_container",
+          "height": 34,
+          "fill": "#FFFFFF",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "TJG32",
+              "width": 134,
+              "height": 5,
+              "fill": "#1C1C1E",
+              "cornerRadius": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ylpH4",
+      "x": 3483,
+      "y": 0,
+      "name": "r-04c-postpone-collection-zh",
+      "clip": true,
+      "width": 393,
+      "height": 844,
+      "fill": "#F2F2F7",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Sl1At",
+          "name": "Status Bar",
+          "width": "fill_container",
+          "height": 47,
+          "fill": "#F2F2F7",
+          "padding": [
+            14,
+            24,
+            0,
+            24
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "k8k3HT",
+              "fill": "#1C1C1E",
+              "content": "9:41",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "r6IHR9",
+          "name": "Navigation Bar",
+          "width": "fill_container",
+          "height": 44,
+          "fill": "#F2F2F7",
+          "gap": 8,
+          "padding": [
+            0,
+            12
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "pAma9",
+              "name": "Back Button",
+              "width": 72,
+              "gap": 2,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "YIJOK",
+                  "width": 22,
+                  "height": 22,
+                  "iconFontName": "chevron-left",
+                  "iconFontFamily": "lucide",
+                  "fill": "#0F766E"
+                },
+                {
+                  "type": "text",
+                  "id": "F6vW0J",
+                  "fill": "#0F766E",
+                  "content": "返回",
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "kjID2",
+              "fill": "#1C1C1E",
+              "content": "延期收租",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "I4mC0",
+              "name": "Nav Spacer",
+              "width": 72,
+              "height": 1
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "NVfc4",
+          "name": "Main Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "fill": "#F2F2F7",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            8,
+            16,
+            16,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "xLhqK",
+              "name": "Summary Card",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 16,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000000D",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 12
+              },
+              "layout": "vertical",
+              "gap": 6,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "E0ON58",
+                  "fill": "#8E8E93",
+                  "content": "本期应收",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "W5yCh",
+                  "fill": "#1C1C1E",
+                  "content": "$1,600",
+                  "fontFamily": "Inter",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "RBb3k",
+                  "fill": "#6B7280",
+                  "content": "原截至日期 2026/1/1 · 租金涵盖 1/1–1/28",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "n5pgqr",
+              "name": "Form Card",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 16,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000000A",
+                "offset": {
+                  "x": 0,
+                  "y": 2
+                },
+                "blur": 8
+              },
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "TB3lB",
+                  "name": "Field Reason",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lIpbw",
+                      "fill": "#8E8E93",
+                      "content": "延期原因",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "z1fKeQ",
+                      "name": "Input",
+                      "width": "fill_container",
+                      "height": 88,
+                      "fill": "#F9FAFB",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#E5E5EA"
+                      },
+                      "layout": "vertical",
+                      "padding": [
+                        12,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "TEF95",
+                          "fill": "#1C1C1E",
+                          "content": "租客临时外出，本次上门收租取消",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "g7qo6C",
+                  "name": "Field Next Date",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "XYEf8",
+                      "fill": "#8E8E93",
+                      "content": "新的收租日期",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "xFV3B",
+                      "name": "Input",
+                      "width": "fill_container",
+                      "fill": "#F9FAFB",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#E5E5EA"
+                      },
+                      "padding": [
+                        12,
+                        14
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "liOvs",
+                          "fill": "#1C1C1E",
+                          "content": "2026年1月8日",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "qjtY8",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "calendar",
+                          "iconFontFamily": "lucide",
+                          "fill": "#0F766E"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "zsGnY",
+                      "fill": "#8E8E93",
+                      "content": "到期前将提醒；截至日期更新为此日",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "H4pKf",
+              "name": "Hint",
+              "width": "fill_container",
+              "fill": "#FFFBEB",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FDE68A"
+              },
+              "gap": 8,
+              "padding": [
+                12,
+                14
+              ],
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "QANUL",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "info",
+                  "iconFontFamily": "lucide",
+                  "fill": "#D97706"
+                },
+                {
+                  "type": "text",
+                  "id": "Stabd",
+                  "fill": "#92400E",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "确认后：更新截至日期，不记收款流水，本期仍为待收。若原截止日已过，标记逾期并显示已延期。",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "X2FpXf",
+          "name": "Bottom Dock",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "top": 1
+            },
+            "fill": "#E5E5EA"
+          },
+          "layout": "vertical",
+          "padding": [
+            12,
+            16,
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "r68aQS",
+              "name": "Confirm Button",
+              "width": "fill_container",
+              "height": 46,
+              "fill": "#0F766E",
+              "cornerRadius": 12,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "w59B9",
+                  "fill": "#FFFFFF",
+                  "content": "确认延期收租",
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "MrGif",
+          "name": "Home Indicator",
+          "width": "fill_container",
+          "height": 34,
+          "fill": "#FFFFFF",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "HclJp",
+              "width": 134,
+              "height": 5,
+              "fill": "#1C1C1E",
+              "cornerRadius": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "nbZ5T",
+      "x": 3916,
+      "y": 0,
+      "name": "r-04c-postpone-collection-en",
+      "clip": true,
+      "width": 393,
+      "height": 844,
+      "fill": "#F2F2F7",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "A17IZR",
+          "name": "Status Bar",
+          "width": "fill_container",
+          "height": 47,
+          "fill": "#F2F2F7",
+          "padding": [
+            14,
+            24,
+            0,
+            24
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "OzKR8",
+              "fill": "#1C1C1E",
+              "content": "9:41",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "j0jSd",
+          "name": "Navigation Bar",
+          "width": "fill_container",
+          "height": 44,
+          "fill": "#F2F2F7",
+          "gap": 8,
+          "padding": [
+            0,
+            12
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "bq7Xw",
+              "name": "Back Button",
+              "width": 72,
+              "gap": 2,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "hP3Fz",
+                  "width": 22,
+                  "height": 22,
+                  "iconFontName": "chevron-left",
+                  "iconFontFamily": "lucide",
+                  "fill": "#0F766E"
+                },
+                {
+                  "type": "text",
+                  "id": "iUcn5",
+                  "fill": "#0F766E",
+                  "content": "Back",
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "d0RSEj",
+              "fill": "#1C1C1E",
+              "content": "Postpone collection",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "XRsCz",
+              "name": "Nav Spacer",
+              "width": 72,
+              "height": 1
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "m4qe1Q",
+          "name": "Main Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "fill": "#F2F2F7",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            8,
+            16,
+            16,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "DAJjp",
+              "name": "Summary Card",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 16,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000000D",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 12
+              },
+              "layout": "vertical",
+              "gap": 6,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "pxa1G",
+                  "fill": "#8E8E93",
+                  "content": "Amount due",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "w47ch2",
+                  "fill": "#1C1C1E",
+                  "content": "$1,600",
+                  "fontFamily": "Inter",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "h0YSnn",
+                  "fill": "#6B7280",
+                  "content": "Original due 1 Jan 2026 · Covers 1 Jan – 28 Jan",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Vx3JY",
+              "name": "Form Card",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 16,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000000A",
+                "offset": {
+                  "x": 0,
+                  "y": 2
+                },
+                "blur": 8
+              },
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "vc8C4",
+                  "name": "Field Reason",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "eWuTF",
+                      "fill": "#8E8E93",
+                      "content": "Reason for postponement",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "oS4h7",
+                      "name": "Input",
+                      "width": "fill_container",
+                      "height": 88,
+                      "fill": "#F9FAFB",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#E5E5EA"
+                      },
+                      "layout": "vertical",
+                      "padding": [
+                        12,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "x2qjar",
+                          "fill": "#1C1C1E",
+                          "content": "Tenant away; in-person collection cancelled this time",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "oTaEA",
+                  "name": "Field Next Date",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kIyaE",
+                      "fill": "#8E8E93",
+                      "content": "New collection date",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Mshn0",
+                      "name": "Input",
+                      "width": "fill_container",
+                      "fill": "#F9FAFB",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#E5E5EA"
+                      },
+                      "padding": [
+                        12,
+                        14
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "gkImk",
+                          "fill": "#1C1C1E",
+                          "content": "8 Jan 2026",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "I1QYNq",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "calendar",
+                          "iconFontFamily": "lucide",
+                          "fill": "#0F766E"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Y2efr",
+                      "fill": "#8E8E93",
+                      "content": "Reminder before due; due date updates to this date",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "iwDm1",
+              "name": "Hint",
+              "width": "fill_container",
+              "fill": "#FFFBEB",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FDE68A"
+              },
+              "gap": 8,
+              "padding": [
+                12,
+                14
+              ],
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "D7bT5B",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "info",
+                  "iconFontFamily": "lucide",
+                  "fill": "#D97706"
+                },
+                {
+                  "type": "text",
+                  "id": "k8Qyfh",
+                  "fill": "#92400E",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "On confirm: due date updates; no payment recorded; bill stays due. If past original due, marked overdue with rescheduled date.",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Jn4Lr",
+          "name": "Bottom Dock",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "top": 1
+            },
+            "fill": "#E5E5EA"
+          },
+          "layout": "vertical",
+          "padding": [
+            12,
+            16,
+            0,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "RdNOq",
+              "name": "Confirm Button",
+              "width": "fill_container",
+              "height": 46,
+              "fill": "#0F766E",
+              "cornerRadius": 12,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "u4PCOw",
+                  "fill": "#FFFFFF",
+                  "content": "Confirm postpone",
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LuUTF",
+          "name": "Home Indicator",
+          "width": "fill_container",
+          "height": 34,
+          "fill": "#FFFFFF",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "G6jqbs",
               "width": 134,
               "height": 5,
               "fill": "#1C1C1E",
