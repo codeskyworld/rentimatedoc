@@ -9771,7 +9771,7 @@
     {
       "type": "frame",
       "id": "aP54O",
-      "x": 3050,
+      "x": 3074,
       "y": 0,
       "name": "r-04-partial-payment-en",
       "clip": true,
@@ -10251,7 +10251,7 @@
     {
       "type": "frame",
       "id": "ylpH4",
-      "x": 3483,
+      "x": 3603,
       "y": 0,
       "name": "r-04c-postpone-collection-zh",
       "clip": true,
@@ -10664,7 +10664,7 @@
     {
       "type": "frame",
       "id": "nbZ5T",
-      "x": 3916,
+      "x": 4026,
       "y": 0,
       "name": "r-04c-postpone-collection-en",
       "clip": true,
